@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---RESET---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+h1{
+    color: #ffffff;
+}
+h2{
+    color: #585856;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    color: white;
+}
+
+header{
+    background-color:#055da9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+header ul li a{
+    text-decoration:none;
+    font-size: 20px;
+    margin: 10px 30px 10px 30px;
+}
+
+
+
+header h1{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+
+.navbar-color{
+    background-color: #055da9;
+}
+
+.boton{
+    background-color:white;
+    color:black;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.boton:hover{
+    background-color: #055da9;
+    color: white;
+}
+
+
+
+
+/*!---main para el index--*/
+.hero img {
+    height: 300px;
+    width:auto;
+}
+
+.hero{
+    text-align: center;
+}
+.hero h2{
+    padding: 20px;
+}
+
+
+.especialidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.especialidad h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+    
+}
+.texto-de-especialidad p{
+    background-color: #055da9;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+}
+.texto-de-especialidad::selection{
+    background-color: #055da9;
+    color: white;
+}
+
+.nuestro div img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    
+}
+.nuestro div {
+    background-color: #055da9;
+    }
+.nuestro h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+    
+}
+.nuestro p{
+    color: #ffffff;
+    text-align: center;
+    margin: 20px;
+}
+.nuestro::selection{
+    background-color: #055da9;
+    color: white;
+}
+    
+.nuestro h3{
+    padding: 20px;
+}
+    
+.nuestro img{
+    margin: 20px;
+}
+.nuestro div {
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.articulos{
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+.texto-articulo h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+/**---como hacer para que el botom me siga a todas las paginas--*/
+.fixed img{ 
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+
+/**---main para tecnologia--*/
+.tecnologia{
+    background-image: url(../img/sala.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+
+}
+.tecnologia h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 10px;
+}
+.tecnologia div{
+    padding: 10px;
+}
+.sala{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.equipos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.dializadores{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.equipos img{
+    height: 200px;
+}
+.dializadores img{
+    height: 200px;
+
+}
+
+
+/*!---main para nosotros--*/
+.grid-container{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-areas: 
+    " historia historia creador"
+    "quehacemos motivacion."
+    "calidad team vacaciones";
+    
+}
+.grid-container p{
+    color: black;
+}
+.grid-container{
+    background-image: url(../img/hospital.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.historia{
+    grid-area: historia;
+    margin: 20px;
+    text-align: center;
+    
+}
+.creador{
+    grid-area: creador;
+    margin: 30px;
+    padding: 10px;
+}
+.creador img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+}
+
+.quehacemos{
+    grid-area: quehacemos;
+    padding: 10px;
+    margin: 20px;
+    background-color: #055da9;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    
+}
+.quehacemos h2{
+    color: white;
+}
+.quehacemos p{
+    color:black;
+}
+
+.motivacion{
+    grid-area: motivacion;
+    background-color: #055da9;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+}
+.motivacion h2{
+    color: #ffffff;
+}
+.motivacion p{
+    color: black;
+}
+.calidad{
+    grid-area: calidad;
+    padding: 10px;
+    margin: 20px;
+    background-color: #055da9;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+}
+.calidad h2{
+    color: #ffffff;
+    
+}
+
+.team{
+    grid-area: team;
+    padding: 10px;
+    margin: 20px;
+    background-color:#055da9;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+}
+.team h2{
+    color: #ffffff;
+}
+
+.vacaciones{
+    grid-area: vacaciones;
+    padding: 10px;
+    margin: 20px;
+    background-color: #055da9;
+    box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 42px -7px rgba(0,0,0,0.75);
+}
+.vacaciones h2{
+    color: #ffffff;
+}
+
+
+
+
+
+
+/*?---main para el prestaciones--*/
+.todo-prestaciones{
+    background-image: url(../img/calidad-en-servicios-de-prestacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+
+.titulo-prestaciones h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+
+
+}
+.prestaciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 30px;
+
+    
+}
+
+.prestacionesdos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 30px;
+}
+
+/**---main para contacto--*/
+.todo-contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.todo-contacto div h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+}
+
+
+.todo-contacto h3{
+    color:#055da9;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.formulario{
+    border: 4px solid#055da9;
+    margin: 10px;
+    
+
+}
+form div{
+    margin: 10px;
+    padding: 10px;
+    text-align:left;
+}
+.ubicacion p{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid#055da9; 
+    margin: 20px;
+}
+
+.titulo-guardia{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 20px;
+}
+
+.guardia{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.guardia p{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid#055da9
+}
+.redes{
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/**---footer--*/
+footer img{
+    width: 100px;
+    height:auto; 
+    margin: 20px;
+}
+footer h2{
+    padding: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #055da9;
+    margin: 10px 30px 10px 30px
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/*!--MEDIA QUERY--*/
+@media screen and ( max-width:1223px){
+    .grid-container{
+        grid-template-rows: 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "historia"
+        "historia"
+        "quehacemos"
+        "motivacion"
+        "calidad"
+        "team"
+        "vacaciones";
+    }
+    .creador img{
+        display: none;
+    }
+    
+    .historia{
+            background-color:#055da9;
+        }
+    .historia h2{
+            color: white;
+        }
+    .historia p{
+            color: black;
+        }   
+    .historia{
+            grid-column: span 3;
+        }
+    .quehacemos{
+            grid-column: span 3;
+        }
+    .motivacion{
+        grid-column: span 3;
+        }
+    .calidad{
+        grid-column: span 3;
+    }
+    .team{
+        grid-column: span 3;
+    }
+    .vacaciones{
+        grid-column: span 3;
+    }
+        
+}
+
+@media screen and (max-width : 1000px){
+    .articulos{
+        display: none;
+    }
+    .texto-articulo h2{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 833px){
+    header nav ul li a {
+        margin: 0px;
+        text-align: center;
+    }
+    header h1{
+        font-size: 40px;
+        margin: 5px;
+    }
+}
+    @media screen and (max-width: 833px){
+        .hero img{
+            display: none;
+        }
+}
+@media screen and (max-width : 800px){
+    .todo-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-contacto div h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 30px;
+    }
+    .todo-contacto p{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 30px;
+    }
+    .guardia  p{
+    text-align: center;
+    padding: 10px;
+    border: 4px solid#055da9; 
+    margin: 50px;
+    }
+}
+    @media screen and (max-width : 700px){
+        .nuestro div img{
+            display: none;
+            
+        }
+}
+    @media screen and (max-width : 700px) {
+        footer ul a {
+        display: flex;
+        justify-content:left;
+    }
+    footer h2{
+        display: none;
+    }
+}
+
+    @media screen and (max-width : 700px){
+        header h1{
+            font-size: 30px;
+        }
+}
+
+
+@media screen and (max-width : 490px){
+    .guardia img{
+        display: none;
+    }
+
+    .ubicacion iframe{
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+
+    }
+}
+
+
+
+
+    
+
+/*--media query para imprimir--*/
+    @media print{
+        h1 , h2{
+        font-family: fantasy;
+        color: #055da9;
+    }
+}
+
+
