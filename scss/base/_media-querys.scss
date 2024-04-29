@@ -1,0 +1,157 @@
+@media screen and ( max-width:1223px){
+    .grid-container{
+        grid-template-rows: 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "quehacemos"
+        "quehacemos"
+        "motivacion"
+        "calidad"
+        "team"
+        "vacaciones";
+    }
+    .creador img{
+        display: none;
+}
+    
+    
+    .historia h2{
+            display: none;
+        }
+    .historia p{
+            display: none;
+        }   
+    .quehacemos{
+            grid-column: span 4;
+        }
+    .motivacion{
+        grid-column: span 4;
+        }
+    .calidad{
+        grid-column: span 4;
+    }
+    .team{
+        grid-column: span 4;
+    }
+    .vacaciones{
+        grid-column: span 4;
+    }
+        
+}
+@media screen and (max-width : 1075px){
+    .prestaciones{
+        flex-direction:column;
+        
+        align-items: center;
+        
+        }
+    .prestacionesdos{
+        flex-direction:column;
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width : 1000px){
+    .articulos{
+        display: none;
+    }
+    .texto-articulo h2{
+        display: none;
+    }
+}
+@media screen and (max-width :1035px){
+    .sala {
+        flex-direction:column;
+}
+    .equipos{
+        flex-direction:column;
+        img{display: none;}
+    }
+    .dializadores{
+        flex-direction:column;
+        img{display: none;}
+    }
+    
+    
+}
+
+@media screen and (max-width: 833px){
+    header nav ul li a {
+        margin: 0px;
+        text-align: center;
+    }
+    header h1{
+        font-size: 40px;
+        margin: 5px;
+    }
+}
+    @media screen and (max-width: 833px){
+        .hero img{
+            display: none;
+        }
+}
+@media screen and (max-width : 800px){
+    .todo-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-contacto div h2{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 30px;
+    }
+    .todo-contacto p{
+    text-align: center;
+    padding: 20px;
+    border: 4px solid#055da9; 
+    margin: 30px;
+    }
+    .guardia  p{
+    text-align: center;
+    padding: 10px;
+    border: 4px solid#055da9; 
+    margin: 50px;
+    }
+}
+    @media screen and (max-width : 700px){
+        .nuestro div img{
+            display: none;
+            
+        }
+}
+    @media screen and (max-width : 700px) {
+        footer ul a {
+        display: flex;
+        justify-content:left;
+    }
+    footer h2{
+        display: none;
+    }
+}
+
+    @media screen and (max-width : 700px){
+        header h1{
+            font-size: 30px;
+        }
+}
+
+
+@media screen and (max-width : 490px){
+    .guardia img{
+        display: none;
+    }
+
+    .ubicacion iframe{
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+
+    }
+}
+@media print{
+        h1 , h2{
+        font-family: fantasy;
+        color: #055da9;
+    }
+}

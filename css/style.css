@@ -30,7 +30,7 @@ header{
 }
 
 
-header ul li a{
+header a{
     text-decoration:none;
     font-size: 20px;
     margin: 10px 30px 10px 30px;
@@ -235,7 +235,7 @@ header h1{
     row-gap: 50px;
     grid-template-areas: 
     " historia historia creador"
-    "quehacemos motivacion."
+    "quehacemos motivacion ."
     "calidad team vacaciones";
     
 }
@@ -368,8 +368,15 @@ header h1{
     justify-content: space-around;
     margin: 50px;
     padding: 30px;
-
+}
+.card-img-top{
+    height: 200px;
+    width: auto;
     
+}
+.card-img-top2{
+    height: 220px;
+    width: auto;
 }
 
 .prestacionesdos{
@@ -379,7 +386,11 @@ header h1{
     margin: 50px;
     padding: 30px;
 }
+.prestacionesdos img{
+    height: 200px;
+    width: auto;
 
+}
 /**---main para contacto--*/
 .todo-contacto{
     display: flex;
@@ -522,6 +533,16 @@ footer{
     }
         
 }
+@media screen and (max-width : 1075px){
+    .prestaciones{
+        flex-wrap: wrap;
+        margin: 50px;
+        padding: 30px;
+    }
+
+}
+
+
 
 @media screen and (max-width : 1000px){
     .articulos{
@@ -607,14 +628,7 @@ footer{
 
     }
 }
-
-
-
-
-    
-
-/*--media query para imprimir--*/
-    @media print{
+@media print{
         h1 , h2{
         font-family: fantasy;
         color: #055da9;

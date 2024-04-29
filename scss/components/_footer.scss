@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{ width: 100px;
+        height:auto; 
+        margin: 20px;}
+    h2{padding: 20px;}
+    ul{ list-style: none;
+        li{
+            a{ text-decoration: none;
+                color: #055da9;
+                margin: 10px 30px 10px 30px}
+        }
+    }
+}
