@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
+  a {
+    text-decoration: none;
+  }
 h1 {
   color: #ffffff; }
 
@@ -197,8 +199,8 @@ main .guardia {
   column-gap: 50px;
   row-gap: 50px;
   grid-template-areas: "historia historia creador"
-"quehacemos motivacion."
-"calidad team vacaciones";
+ "quehacemos motivacion."
+ "calidad team vacaciones";
   background-image: url(../img/hospital.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -356,11 +358,11 @@ footer {
     grid-template-rows: 100px;
     grid-template-columns: 1fr;
     grid-template-areas: "quehacemos"
-  "quehacemos"
-  "motivacion"
-  "calidad"
-  "team"
-  "vacaciones"; }
+ "quehacemos"
+ "motivacion"
+ "calidad"
+ "team"
+ "vacaciones"; }
   .creador img {
     display: none; }
   .historia h2 {
